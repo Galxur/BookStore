@@ -19,7 +19,7 @@ class BookViewSet(ModelViewSet):
     ordering_fields = ['title','author','category','in_stock', 'price']
     filter_class = BookFilter #?
     #factory boy ?
-    search_fields = ['title','author','category']
+    search_fields = ['title','author']
     filterset_fields = ['in_stock']
     #If all you need is simple equality-based filtering, you can set a filterset_fields attribute on the view, or
     # viewset, listing the set of fields you wish to filter against.
